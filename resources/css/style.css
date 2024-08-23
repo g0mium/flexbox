@@ -1,0 +1,521 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS Rules */
+
+/* General Rules*/
+
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(22, 22, 22);
+}
+
+.playfair {
+  font-family: 'Playfair Display';
+}
+
+.nunito {
+  font-family: 'Nunito';
+}
+
+/* Header Rules */
+
+.header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: solid 1px gray;
+  height: 4rem;
+  top: 0;
+  color: rgb(22, 22, 22);
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.header ul li {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  /* background-color: red; */
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+.header ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 1.6rem;
+  text-align: center;
+  line-height: 46px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  /* background-color: blue; */
+  margin-top: -5px;
+}
+
+.logo h1 {
+  font-size: 2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section  rules */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60rem;
+  animation: changeBackground 5s infinite step-start;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url(../images/hero/1.jpg);
+  }
+
+  20% {
+    background-image: url(../images/hero/2.jpg);
+  }
+
+  40% {
+    background-image: url(../images/hero/3.jpg);
+  }
+
+  60% {
+    background-image: url(../images/hero/4.jpg);
+  }
+
+  80% {
+    background-image: url(../images/hero/5.jpg);
+  }
+
+  100% {
+    background-image: url(../images/hero/6.jpg);
+  }
+}
+
+.hero .hero-text {
+  width: 90%;
+  padding: 0.5rem;
+  margin: auto;
+  height: auto;
+}
+
+.hero h1 {
+  color: white;
+  text-align: left;
+  font-size: 10rem;
+  word-wrap: break-word;
+  font-weight: 600;
+}
+
+.hero h3 {
+  color: white;
+  text-align: left;
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.statement {
+  display: flex;
+  align-items: center;
+  min-height: 5rem;
+  padding: 2rem;
+}
+
+.statement h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: left;
+  margin: 1.5rem;
+}
+
+.statement p {
+  text-align: left;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+/* Services section rules */
+
+.services {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  background-color: rgb(232, 240, 255);
+  padding: 3rem 1.5rem;
+  color: white;
+}
+
+.services-header {
+  font-size: 6rem;
+  font-weight: 600;
+  width: 100%;
+  background-color: rgb(232, 241, 255);
+  padding-top: 3rem;
+}
+
+.services-header h1 {
+  /* background-color: rgb(255, 230, 0); */
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.3333%;
+  margin: 0.4rem;
+  padding: 4rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 22rem;
+}
+
+.service:hover {
+  cursor: pointer;
+  border: solid 0.2rem rgb(255, 255, 255);
+  transition: all 0.2s ease;
+}
+
+.service:hover h2 {
+  display: none;
+}
+
+.service:hover p {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.curatorship {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(../images/services/curatorship.jpg);
+}
+
+.curatorship:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../images/services/curatorship.jpg);
+}
+
+.art-direction {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(../images/services/art-direction.jpg);
+}
+
+.art-direction:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../images/services/art-direction.jpg);
+}
+
+.portrait {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(../images/services/portrait.jpg);
+}
+
+.portrait:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../images/services/portrait.jpg);
+}
+
+.service h2 {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1.2rem 0;
+  word-wrap: break-word;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.service p {
+  display: none;
+  overflow: hidden;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  font-weight: 200;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+/* Team section rules */
+
+/* Footer  */
+
+footer {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 10rem;
+  background-color: rgb(22, 22, 22);
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50rem;
+  padding-left: 3rem;
+  font-size: 0.8rem;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row;
+}
+
+.footer-left p {
+  margin: 1rem 0;
+}
+
+footer ul li {
+  white-space: nowrap;
+  padding-right: 1rem;
+}
+
+.footer-right .logo {
+  font-size: 2rem;
+}
+
+.footer-left a {
+  color: white;
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
+.footer-right span {
+  margin-top: -1rem;
+  vertical-align: text-top;
+  font-size: 0.9rem;
+}
+
+footer .greyed {
+  color: rgb(168, 168, 168);
+}
+/* Media queries */
+
+@media only screen and (max-width: 1300px) {
+  .service h2 {
+    font-size: 2rem;
+  }
+
+  .service p {
+    font-size: 1rem;
+  }
+
+  .service {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .services {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    color: white;
+  }
+
+  .service img {
+    display: none;
+  }
+
+  .services-header {
+    font-size: 6rem;
+  }
+
+  .service:hover p {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .services-header {
+    font-size: 5rem;
+  }
+}
