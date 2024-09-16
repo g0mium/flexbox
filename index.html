@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus</title>
+    <link rel="stylesheet" href="/resources/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,12 +15,13 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./resources/css/style.css" />
+    <!-- Header section -->
   </head>
   <body>
     <div class="header">
       <div class="logo playfair">
         <h1><a href="#">Focus</a></h1>
+        <h2>F</h2>
       </div>
       <nav>
         <ul class="nunito">
@@ -29,26 +31,32 @@
           <li><a href="#">Installations</a></li>
         </ul>
       </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <div class="hero">
       <div class="hero-text">
         <h1 class="playfair">Good<br />Photography.</h1>
       </div>
     </div>
+    <!-- Statement -->
     <div class="statement">
       <h1 class="playfair">OUR MISSION</h1>
       <p>
-        Distill the essence of life into images that speak to the heart and soul. Trough our art, we
-        invite you to see the world in a new light—where every detail is intentional, every frame is
-        meaningful, and every photo is a timeless work of art.
+        "Distill the essence of life into images that speak to the heart and soul. Trough our art,
+        we invite you to see the world in a new light—where every detail is intentional, every frame
+        is meaningful, and every photo is a timeless work of art."
       </p>
     </div>
+    <!-- Services -->
     <div class="services-header">
-      <h1>OUR SERVICES</h1>
+      <h1 class="big-header">SERVICES</h1>
     </div>
     <div id="services" class="services playfair">
       <div class="service art-direction">
-        <!-- <img src="./resources/images/services/art-direction.jpg" alt="" /> -->
         <h2>Art Direction</h2>
         <p>
           Bring your vision to life with creative precision. We work closely with you to craft
@@ -57,7 +65,6 @@
         </p>
       </div>
       <div class="service curatorship">
-        <!-- <img src="./resources/images/services/curatorship.jpg" alt="" /> -->
         <h2>Curatorship</h2>
         <p>
           We expertly select and present your best images, creating a cohesive and compelling visual
@@ -65,17 +72,52 @@
         </p>
       </div>
       <div class="service portrait">
-        <!-- <img src="./resources/images/services/portrait.jpg" alt="" /> -->
         <h2>Portrait</h2>
         <p>
           Timeless, expressive images that highlight your unique personality and story, ensuring
           each portrait is a true reflection of you.
         </p>
       </div>
+      <div class="service shop">
+        <h2>SHOP</h2>
+        <p>High-quality camera gear for all levels.</p>
+      </div>
+    </div>
+    <!-- Team section -->
+    <div class="team">
+      <div class="team-header">
+        <h1 class="big-header">THE TEAM</h1>
+      </div>
+      <div class="members playfair">
+        <div class="member team-1">
+          <h2>Sophia Bennett</h2>
+          <p>Creative Director</p>
+        </div>
+        <div class="member team-2">
+          <h2>Noah Carter</h2>
+          <p>Lead Photographer</p>
+        </div>
+        <div class="member team-3">
+          <h2>Olivia Thompson</h2>
+          <p>Art Director</p>
+        </div>
+        <div class="member team-4">
+          <h2>James Reynolds</h2>
+          <p>Curator & Archivist</p>
+        </div>
+        <div class="member team-5">
+          <h2>Ava Mitchell</h2>
+          <p>Studio Manager</p>
+        </div>
+        <div class="member team-6">
+          <h2>Jack Hayes</h2>
+          <p>Client Relations Specialist</p>
+        </div>
+      </div>
     </div>
     <footer>
-      <div class="footer-left nunito">
-        <ul>
+      <div class="footer-left nunito desktop">
+        <ul class="desktop">
           <li><a href="#">English</a></li>
           <li><a class="greyed" href="#">Deutsch</a></li>
           <li><a class="greyed" href="#">Español</a></li>
@@ -86,10 +128,10 @@
           <li><a class="greyed" href="#">Русский</a></li>
           <li><a class="greyed" href="#">简体中文</a></li>
         </ul>
-        <p>
+        <p class="desktop">
           <a href="#"><span class="greyed">Time zone:</span> Europe/London</a>
         </p>
-        <ul>
+        <ul class="desktop">
           <li class="greyed">
             <a class="greyed" href="#">Focus © 2024</a> Focus Ltd. All rights reserved
           </li>
@@ -99,8 +141,19 @@
           <li class="greyed"><a class="greyed" href="#">Jobs at Focus</a></li>
         </ul>
       </div>
-      <div class="footer-right">
+      <div class="footer-right desktop">
         <h1 class="logo">FOCUS<span>©</span></h1>
+      </div>
+      <div class="nunito mobile">
+        <ul>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Cookie Manager</a></li>
+          <li><a href="#">Copyright</a></li>
+        </ul>
+        <p class="greyed">Focus © 2024 | Focus Ltd. All rights reserved</p>
       </div>
     </footer>
   </body>
