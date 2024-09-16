@@ -678,18 +678,16 @@ footer .mobile p {
     font-weight: 400;
   }
 
-  /* .header .logo h2 {
-    display: flex;
-    font-size: 3rem;
-    font-weight: 900;
-  } */
-
   .header nav ul {
     display: none;
   }
 
   .hamburger {
     display: flex;
+  }
+
+  .hero {
+    height: 80vh;
   }
 
   .hero-text h1 {
