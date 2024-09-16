@@ -628,23 +628,25 @@ footer .mobile p {
 
 @media only screen and (max-width: 950px) {
   .services {
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
 
   .service {
-    width: 100%;
+    width: 48%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 4rem;
+    padding: 1rem;
     color: white;
+    height: 20rem;
   }
 
   .service:hover {
-    width: 100%;
+    width: 48%;
   }
 
   .service img {
@@ -656,19 +658,51 @@ footer .mobile p {
   }
 
   .service h2 {
-    font-size: 3rem;
+    font-size: 1.9rem;
   }
 
   .service:hover p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   footer .footer-right {
     display: none;
   }
+
+  .team members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .team .member {
+    height: 22rem;
+    width: 22rem;
+  }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 550px) {
+  .services {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .service:hover {
+    width: 100%;
+  }
+
+  .big-header {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
   .header {
     padding: 1rem 2rem;
   }
@@ -712,16 +746,28 @@ footer .mobile p {
   }
 
   .service {
-    height: 26rem;
+    flex-direction: column;
+    height: 14rem;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .service:hover {
+    width: 100%;
   }
 
   .service h2 {
     font-size: 2.5rem;
   }
 
+  .service:hover p {
+    font-size: 1.2rem;
+  }
+
   .team .member {
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 16rem;
+    margin-bottom: 2rem;
   }
 
   footer .desktop {
