@@ -664,7 +664,7 @@ footer .mobile p {
   }
 }
 
-@media only screen and (max-width: 413px) {
+@media only screen and (max-width: 420px) {
   .header {
     padding: 1rem 2rem;
   }
