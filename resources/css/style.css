@@ -662,6 +662,10 @@ footer .mobile p {
   .service:hover p {
     font-size: 1.6rem;
   }
+
+  footer .footer-right {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 420px) {
