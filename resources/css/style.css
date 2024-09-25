@@ -150,7 +150,7 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(22, 22, 22);
+  color: rgb(255, 255, 255);
 }
 
 .playfair {
@@ -172,12 +172,11 @@ a {
 /* Header Rules */
 
 .header {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
-  border-bottom: solid 1px gray;
+  padding: 1rem;
   height: 4rem;
   top: 0;
   color: rgb(22, 22, 22);
@@ -211,12 +210,12 @@ a {
 .logo {
   display: flex;
   align-items: center;
-  /* background-color: blue; */
+  justify-content: center;
   margin-top: -5px;
 }
 
 .logo h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .logo h2 {
@@ -237,7 +236,7 @@ nav a:hover {
 }
 
 .hamburger span {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   height: 2px;
   width: 100%;
   border-radius: 3rem;
@@ -695,12 +694,11 @@ footer .mobile p {
 
 @media only screen and (max-width: 430px) {
   .header {
-    padding: 1rem 2rem;
     height: 2.7rem;
   }
 
   .header .logo h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
   }
 
