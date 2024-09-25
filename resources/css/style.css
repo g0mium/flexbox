@@ -162,11 +162,11 @@ a {
 }
 
 .big-header {
-  padding-left: 2rem;
+  font-family: 'Nunito';
   text-align: left;
-  font-size: 6rem;
-  font-weight: 600;
-  padding-top: 3rem;
+  font-size: 4rem;
+  font-weight: 800;
+  padding: 3rem 0 3rem 2rem;
 }
 
 /* Header Rules */
@@ -231,16 +231,16 @@ nav a:hover {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.4rem;
+  height: 1.2rem;
   cursor: pointer;
 }
 
 .hamburger span {
-  background-color: black;
-  height: 3px;
+  background-color: rgb(0, 0, 0);
+  height: 2px;
   width: 100%;
-  border-radius: 2px;
+  border-radius: 3rem;
 }
 
 /* Hero section  rules */
@@ -331,14 +331,14 @@ nav a:hover {
   flex-direction: row;
   width: 100%;
   margin: auto;
-  background-color: rgb(232, 240, 255);
-  padding: 3rem 1.5rem;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
 .services-header {
   width: 100%;
-  background-color: rgb(232, 241, 255);
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .service {
@@ -350,9 +350,7 @@ nav a:hover {
   height: 32rem;
   width: 24%;
   margin: 0.3rem;
-  padding: 4rem;
-  border-radius: 1rem;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -360,8 +358,6 @@ nav a:hover {
 
 .service:hover {
   cursor: pointer;
-  border: solid 0.2rem rgb(255, 255, 255);
-  transition: all 0.2s ease;
   width: 24%;
 }
 
@@ -423,14 +419,12 @@ nav a:hover {
   margin: 1.2rem 0;
   word-wrap: break-word;
   width: 100%;
-  transition: all 0.3s ease;
 }
 
 .service p {
   display: none;
   overflow: hidden;
   font-size: 1.2rem;
-  transition: all 0.3s ease;
   font-weight: 200;
 }
 
@@ -443,14 +437,12 @@ nav a:hover {
 .team {
   display: flex;
   flex-direction: column;
-  background-color: rgb(4, 6, 12);
-  padding: 0.2rem;
+  background-color: rgb(14, 14, 14);
+  padding: 0.5rem;
 }
 
 .team .big-header {
-  text-align: ri;
   color: white;
-  font-weight: 100;
 }
 
 .team .members {
@@ -460,25 +452,21 @@ nav a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  gap: 0.1rem;
-  margin: 4rem auto;
 }
 
 .team .member {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
   margin: 0.4rem;
-  padding: 1rem;
-  border-radius: 50%;
-  background-color: white;
+  padding: 2rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 24rem;
   width: 24rem;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .team-1 {
@@ -512,12 +500,12 @@ nav a:hover {
 }
 
 .member p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: rgb(173, 173, 173);
 }
 
 .member h2 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 /* Footer  */
@@ -687,10 +675,12 @@ footer .mobile p {
     width: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding: 0;
   }
 
   .service {
     width: 100%;
+    margin: 1px;
   }
 
   .service:hover {
@@ -699,16 +689,18 @@ footer .mobile p {
 
   .big-header {
     font-size: 4.5rem;
+    padding-bottom: 3rem;
   }
 }
 
 @media only screen and (max-width: 430px) {
   .header {
     padding: 1rem 2rem;
+    height: 2.7rem;
   }
 
   .header .logo h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
   }
 
@@ -731,43 +723,55 @@ footer .mobile p {
   .statement {
     flex-direction: column;
     align-items: flex-start;
+    margin: 1rem auto;
+    padding: 1rem;
   }
 
   .statement h1 {
-    text-align: left;
     font-size: 2rem;
     margin-bottom: 2rem;
   }
 
+  .statement p {
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+
   .big-header {
-    font-size: 4rem;
-    text-align: left;
-    padding: 2rem 0 0 2rem;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
   }
 
   .service {
     flex-direction: column;
     height: 14rem;
-    padding: 1rem;
     width: 100%;
   }
 
   .service:hover {
     width: 100%;
+    border: none;
   }
 
   .service h2 {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
   }
 
   .service:hover p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .team {
+    padding: 0;
+    width: 100%;
   }
 
   .team .member {
-    width: 16rem;
-    height: 16rem;
-    margin-bottom: 2rem;
+    width: 100%;
+    height: 22rem;
+    margin-bottom: 0;
+    margin: 0;
   }
 
   footer .desktop {
